@@ -1,0 +1,160 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 32, 32);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(51, 0, 71);
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+#titulo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    font-size: 1.6em;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+#players{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+#playersH2-box{
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+#players h2{
+    color: rgba(255, 255, 255, 0.801);
+}
+
+#playersH2-box h2{
+    margin: 0 20px;
+}
+
+#vez{
+    display: flex;
+    align-items: center;
+    border: 8px groove #a7a7a7;
+    padding: 10px 0;
+    background-color: #2d2235;
+    min-width: 350px;
+}
+
+#div-vez{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vez h2{
+    text-align: center;
+    font-size: 2.5em;
+    display: flex;
+}
+
+#content{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#jogo{
+    margin-top: 25px;
+    width: 350px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.jogo-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.jogo-content:hover{
+    background-color: #2c2c2c;
+}
+
+#casa1, #casa2, #casa4, #casa5, #casa7, #casa8{
+    border-right: 3px solid #fc98fc;
+}
+
+#casa4, #casa5, #casa6, #casa7, #casa8, #casa9{
+    border-top: 3px solid #fc98fc;
+}
+
+.jogo-content p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    font-size: 4em;
+    color: wheat;
+}
+
+#win{
+    width: 100vw;
+    height: 80vh;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+}
+
+#win-box{
+    width: 50vw;
+    height: 80vh;
+    background-color: #0f001af3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+#win-box h2{
+    font-size: 3em;
+    margin-top: 25vh;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+#win-box button{
+    cursor: pointer;
+    margin-top: 50px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background-color: #ff76ff;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 550;
+}
+
+#win-box button:hover{
+    background-color: #9b2c9b;
+}

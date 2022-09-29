@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div id="titulo">
+            <h1>Jogo da Velha</h1>
+        </div>
+    </header>
+    <div id="players">
+        <div id="playersH2-box">
+        </div>
+        <div id="vez">
+            <div id="div-vez">
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="jogo">
+            <div id="casa1" class="jogo-content" onclick="Jogando('casa1')"></div>
+            <div id="casa2" class="jogo-content" onclick="Jogando('casa2')"></div>
+            <div id="casa3" class="jogo-content" onclick="Jogando('casa3')"></div>
+            <div id="casa4" class="jogo-content" onclick="Jogando('casa4')"></div>
+            <div id="casa5" class="jogo-content" onclick="Jogando('casa5')"></div>
+            <div id="casa6" class="jogo-content" onclick="Jogando('casa6')"></div>
+            <div id="casa7" class="jogo-content" onclick="Jogando('casa7')"></div>
+            <div id="casa8" class="jogo-content" onclick="Jogando('casa8')"></div>
+            <div id="casa9" class="jogo-content" onclick="Jogando('casa9')"></div>
+        </div>
+    </div>
+    <div id="win">
+        <div id="win-box">
+            <h2 id="win-h2"></h2>
+            <button onclick="reloadPage()">Jogar Novamente</button>
+        </div>
+    </div>
+</body>
+
+</html>
