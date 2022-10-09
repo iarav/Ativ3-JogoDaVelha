@@ -74,6 +74,7 @@ h1{
     text-align: center;
     font-size: 2.5em;
     display: flex;
+    margin: 0 20px;
 }
 
 #content{
@@ -131,20 +132,23 @@ h1{
 
 #win{
     visibility: hidden;
+    background-color: rgba(32, 32, 32, 0.685);
 }
 
 #win-box{
-    background-color: #0f001af3;
+    min-width: 50vw;
+    height: 60vh;
+    margin-top: 10vh;
+    background-color: #0f001a;
 } 
 
 #start-box{
     background-color: #0f001a;
-
+    min-width: 50vw;
+    height: 80vh;
 }
 
 #win-box, #start-box{
-    width: 50vw;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,8 +156,7 @@ h1{
 }
 
 #win-box h2{
-    margin-top: 20vh;
-    margin-bottom: 50px;
+    margin: 10vh 20px 50px 20px;
 }
 
 #start-box h2{

@@ -50,7 +50,7 @@ function Jogando(idClicked) {
 
 function VerificarVencedor() {
   if (clickedTimes == 9) {
-    document.getElementById("win-h2").innerHTML = `O jogo empatou:(`;
+    document.getElementById("win-h2").innerHTML = `O jogo empatou  :(`;
     document.getElementById("win").style.visibility = "visible";
   }
   if (
